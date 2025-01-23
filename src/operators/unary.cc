@@ -40,7 +40,7 @@ namespace infini
         // REF: https://onnx.ai/onnx/operators/onnx__Clip.html#clip-13
         // =================================== 作业 ===================================
          const auto A = inputs[0];
-         std::vector<std::vector<int>>{{A->getDims()}};
+        return std::vector<std::vector<int>>{{A->getDims()}};
     }
 
     std::string ClipObj::toString() const
